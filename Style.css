@@ -566,15 +566,16 @@ footer span { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color
    RESPONSIVE
 ═══════════════════════════════════════════ */
 @media (max-width: 900px) {
-  nav { padding: 1rem 1.5rem; }
-  .nav-links { gap: 1rem; }
+  nav { padding: 1rem 1.5rem; } .nav-links { gap: 1rem; }
   #hero { padding: 5rem 1.5rem 3rem; }
-  .hero-inner { grid-template-columns: 1fr; gap: 2rem; }
-  .hero-right { display: none; }
+  .hero-inner { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
+  .hero-left { display: flex; flex-direction: column; align-items: center; }
+  .hero-right { display: flex; justify-content: center; margin-top: 1rem; }
+  .photo-frame { width: 260px; height: 300px; }
+  .floating-stat { display: none; }
   section { padding: 4rem 1.5rem; }
   .skills-grid { grid-template-columns: 1fr 1fr; }
-  .about-grid { grid-template-columns: 1fr; }
-  .contact-grid { grid-template-columns: 1fr; }
+  .about-grid,.contact-grid,.exp-grid { grid-template-columns: 1fr; }
   .chatbot-window { width: calc(100vw - 2rem); right: 1rem; }
   footer { padding: 1.2rem 1.5rem; flex-direction: column; gap: 0.4rem; }
   .opencv-grid { grid-template-columns: 1fr 1fr; }
