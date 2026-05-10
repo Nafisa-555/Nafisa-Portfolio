@@ -30,7 +30,7 @@
   resize(); draw();
 })();
 
-/* ═══════════ CURSOR ═══════════ */
+/*CURSOR*/
 const cursor = document.getElementById('cursor');
 const ring = document.getElementById('cursorRing');
 let mx=0,my=0,rx=0,ry=0;
@@ -48,7 +48,7 @@ document.querySelectorAll('a,button,.chip,.opencv-card,.project-card,.skill-card
   el.addEventListener('mouseleave',()=>{ cursor.style.transform='translate(-50%,-50%) scale(1)'; ring.style.transform='translate(-50%,-50%) scale(1)'; });
 });
 
-/* ═══════════ THEME ═══════════ */
+/*THEME*/
 function toggleTheme(){
   const html = document.documentElement;
   const isDark = html.getAttribute('data-theme')==='dark';
@@ -56,7 +56,7 @@ function toggleTheme(){
   document.getElementById('themeLabel').textContent = isDark ? '☀️ Light' : '🌙 Dark';
 }
 
-/* ═══════════ TYPING EFFECT ═══════════ */
+/*TYPING EFFECT*/
 const roles = ['Data Analyst', 'Backend Developer', 'Python Engineer', 'ML Enthusiast', 'OpenCV Explorer'];
 let ri=0, ci=0, deleting=false;
 const target = document.getElementById('typeTarget');
@@ -68,7 +68,7 @@ function type(){
 }
 type();
 
-/* ═══════════ SCROLL REVEAL ═══════════ */
+/*SCROLL REVEAL*/
 const obs = new IntersectionObserver((entries)=>{
   entries.forEach((e,i)=>{ if(e.isIntersecting){ setTimeout(()=>e.target.classList.add('visible'), i*70); obs.unobserve(e.target); } });
 }, {threshold:0.1});
