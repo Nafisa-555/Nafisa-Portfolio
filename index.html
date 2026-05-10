@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nafisa Ansari - Data & AI </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:ital,wght@0,300;0,400;0,600;1,300&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="Style.css">
+<body>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- GALAXY BACKGROUND -->
+<div class="galaxy-bg">
+  <canvas id="starfield"></canvas>
+  <div class="nebula nebula-1"></div>
+  <div class="nebula nebula-2"></div>
+  <div class="nebula nebula-3"></div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">NAFISA ANSARI</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#opencv">OpenCV</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+    <span id="themeLabel">🌙 Dark</span>
+    <div class="toggle-track"><div class="toggle-thumb"></div></div>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner max-wrap">
+    <div class="hero-left">
+      <div class="hero-eyebrow">Open to Opportunities</div>
+      <h1 class="hero-name">
+        <span>Nafisa</span><br>Ansari
+      </h1>
+      <div class="hero-title" id="typingTitle">
+        <span id="typeTarget"></span><span class="typing-cursor">|</span>
+      </div>
+      <p class="hero-bio">
+        BCA Graduate with hands-on experience in Data Analysis, Machine Learning, and Backend Development.
+        I turn raw data into insights and build APIs that power real products.
+        Currently seeking my first big break in tech. 🚀
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-glow"><span>🔭 View My Work</span></a>
+        <a href="#contact" class="btn-ghost">📡 Let's Connect</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/Nafisa-555" target="_blank" class="social-link">⌥ GitHub</a>
+        <a href="https://www.linkedin.com/in/nafisa-ansari-624344301/" target="_blank" class="social-link">⌗ LinkedIn</a>
+        <a href="mailto:ansarinafisa555@gmail.com" class="social-link">✉ Email</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="photo-frame">
+        <div class="photo-glow-ring"></div>
+        <div class="photo-inner">
+          <div class="photo-placeholder">
+            <img src="Nafisa.jpeg" style="width:100%;height:100%;object-fit:cover">.
+            <div class="photo-name">Nafisa Ansari</div>
+            <div class="photo-role">// Data & AI Engineer</div>
+            <div class="photo-upload-hint">📷 Replace this with your photo by editing the HTML — swap the emoji div with an &lt;img&gt; tag!</div>
+          </div>
+        </div>
+        <div class="photo-corner tl"></div>
+        <div class="photo-corner tr"></div>
+        <div class="photo-corner bl"></div>
+        <div class="photo-corner br"></div>
+        <div class="status-badge">
+          <div class="status-dot"></div>
+          Pleasure to meet you!
+        </div>
+        <div class="floating-stat fs1">
+          <div class="fstat-num">7+</div>
+          <div class="fstat-label">Projects</div>
+        </div>
+        <div class="floating-stat fs2">
+          <div class="fstat-num">BCA</div>
+          <div class="fstat-label">Graduate</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="max-wrap">
+    <div class="section-header reveal">
+      <div class="section-number">// 01 - about me</div>
+      <h2 class="section-title">Who Am I?</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-left reveal-left">
+        <div class="about-photo-wrap">
+          <div class="about-photo-glow"></div>
+          <div class="about-photo-inner">
+            <div class="about-avatar-inner">👩‍💻</div>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="astat"><span class="astat-num">7+</span><span class="astat-label">Projects</span></div>
+          <div class="astat"><span class="astat-num">5+</span><span class="astat-label">Tech Stack</span></div>
+          <div class="astat"><span class="astat-num">∞</span><span class="astat-label">Curiosity</span></div>
+        </div>
+      </div>
+      <div class="about-right reveal-right">
+        <h3>Nafisa Ansari</h3>
+        <p>I am a BCA Graduate with a strong passion for data, AI, and building things that matter. My journey in tech has been hands-on - from cleaning messy datasets and building Power BI dashboards to deploying full-stack Flask apps on cloud platforms.</p>
+        <p>My work spans <strong style="color:var(--accent)">data analysis</strong>, <strong style="color:var(--accent2)">exploratory data analysis (EDA)</strong>, backend API development, and real-time computer vision with OpenCV. I love the intersection of data and code - where numbers tell stories and scripts turn ideas into products.</p>
+        <p>I am actively looking for opportunities as a <strong style="color:var(--accent)">Data Analyst</strong>, <strong style="color:var(--accent2)">Backend Intern</strong>, or <strong style="color:var(--accent3)">Entry-Level Software Engineer</strong>. If you're building something exciting, let's talk!</p>
+        <div style="margin-top:1.5rem">
+          <a href="mailto:ansarinafisa555@gmail.com" class="btn-glow"><span>RESUME</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="max-wrap">
+    <div class="section-header reveal">
+      <div class="section-number">// 02 - tech stack</div>
+      <h2 class="section-title">Skills & Tools</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal" style="transition-delay:0.05s">
+        <div class="skill-icon">💻</div>
+        <div class="skill-cat">Languages</div>
+        <div class="skill-chips">
+          <span class="chip">Python</span><span class="chip">Java</span><span class="chip">Go</span><span class="chip">C</span>
+        </div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:0.1s">
+        <div class="skill-icon">⚡</div>
+        <div class="skill-cat">Frameworks & APIs</div>
+        <div class="skill-chips">
+          <span class="chip">Flask</span><span class="chip">FastAPI</span><span class="chip">REST APIs</span><span class="chip">Auth</span>
+        </div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:0.15s">
+        <div class="skill-icon">📊</div>
+        <div class="skill-cat">Data Science & ML</div>
+        <div class="skill-chips">
+          <span class="chip">NumPy</span><span class="chip">Pandas</span><span class="chip">Matplotlib</span><span class="chip">Seaborn</span><span class="chip">Machine Learning</span><span class="chip">OpenCV</span>
+        </div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:0.2s">
+        <div class="skill-icon">🗄️</div>
+        <div class="skill-cat">Data & Databases</div>
+        <div class="skill-chips">
+          <span class="chip">PostgreSQL</span><span class="chip">MySQL</span><span class="chip">Excel</span><span class="chip">Power BI</span><span class="chip">EDA</span>
+        </div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:0.25s">
+        <div class="skill-icon">☁️</div>
+        <div class="skill-cat">DevOps & Cloud</div>
+        <div class="skill-chips">
+          <span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Google Cloud</span><span class="chip">Render</span><span class="chip">Vercel</span>
+        </div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:0.3s">
+        <div class="skill-icon">🎨</div>
+        <div class="skill-cat">Tools</div>
+        <div class="skill-chips">
+          <span class="chip">VS Code</span><span class="chip">Jupyter</span><span class="chip">Canva</span><span class="chip">Power BI</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="max-wrap">
+    <div class="section-header reveal">
+      <div class="section-number">// 03 - featured work</div>
+      <h2 class="section-title">Projects</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid">
+      <!-- ORBITLY -->
+      <div class="project-card reveal" style="transition-delay:0.05s">
+        <div class="project-img">
+          <div class="project-img-placeholder">
+            <div class="project-img-emoji">🚀</div>
+            <span>Orbitly - Space Explorer</span>
+          </div>
+          <div class="project-img-overlay"></div>
+          <div class="project-num-badge">01</div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Orbitly</div>
+          <div class="project-desc">A full-stack web app pulling live data from NASA APIs, displayed in a stunning space-themed UI. Real-time planetary data, asteroid tracking, and more.</div>
+          <div class="project-chips">
+            <span class="chip">Python</span><span class="chip">Flask</span><span class="chip">NASA API</span><span class="chip">HTML/CSS/JS</span><span class="chip">Render</span>
+          </div>
+          <div class="project-link-row">
+            <a href="https://orbitly-space.onrender.com" target="_blank" class="proj-btn live">🌍 Live Demo</a>
+            <a href="https://github.com/Nafisa-555/OrbitLy-space" target="_blank" class="proj-btn code">⌥ Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" style="transition-delay:0.05s">
+        <div class="project-img">
+          <div class="project-img-placeholder">
+            <div class="project-img-emoji">🌏</div>
+            <span>MeetZy - Find New Friends Locally</span>
+          </div>
+          <div class="project-img-overlay"></div>
+          <div class="project-num-badge">02</div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">MeetZy</div>
+          <div class="project-desc">Meetzy is a web-based social networking platform designed to help users connect with people in their local area.Unlike normal social media platforms that focus on global connections, Meetzy focuses on local and meaningful friendships. Main idea is simple:
+
+Same City + Same Interests = Better Friendships</div>
+          <div class="project-chips">
+            <span class="chip">Python</span><span class="chip">PostgreSQL</span><span class="chip">Fast API</span><span class="chip">HTML/CSS/JS</span><span class="chip">AWS EC2 Deployment</span>
+          </div>
+          <div class="project-link-row">
+            <a href="" target="_blank" class="proj-btn live">🌍 Live Demo-coming soon!</a>
+            <a href="https://github.com/Nafisa-555/MeetZy.-Find-New-Friends-Locally" target="_blank" class="proj-btn code">⌥ Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- NASA Meteorite -->
+      <div class="project-card reveal" style="transition-delay:0.1s">
+        <div class="project-img">
+          <div class="project-img-placeholder">
+            <div class="project-img-emoji">☄️</div>
+            <span>NASA Meteorite Analysis</span>
+          </div>
+          <div class="project-img-overlay"></div>
+          <div class="project-num-badge">03</div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">NASA Meteorite Landings Analysis</div>
+          <div class="project-desc">Deep EDA on NASA's Meteorite Landings dataset - uncovering patterns in sizes, types, and landing locations over centuries using Python visualization libraries.</div>
+          <div class="project-chips">
+            <span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">Seaborn</span><span class="chip">EDA</span>
+          </div>
+          <div class="project-link-row">
+            <a href="https://github.com/Nafisa-555/meteorite-landings-analysis" target="_blank" class="proj-btn live">⌥ View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OPENCV -->
+<section id="opencv">
+  <div class="max-wrap">
+    <div class="section-header reveal">
+      <div class="section-number">// 04 - computer vision</div>
+      <h2 class="section-title">OpenCV Projects</h2>
+      <div class="section-line"></div>
+      <p style="font-size:0.9rem;color:var(--ink2);margin-top:1rem;font-weight:300">Real-time computer vision experiments - gesture control, face detection, and AI-powered games.</p>
+    </div>
+    <div class="opencv-grid">
+      <div class="opencv-card reveal" style="transition-delay:0.05s">
+        <div class="opencv-icon">🎯</div>
+        <div class="opencv-id">CV_01</div>
+        <div class="opencv-name">Real-Time Face Detection</div>
+        <div class="opencv-tech">OpenCV · Haar Cascade · Python</div>
+
+        <a href="https://github.com/Nafisa-555/Day-1-Real-Time-Face-Detection" target="_blank" class="opencv-btn">⌥ GitHub</a>
+        
+      </div>
+      <div class="opencv-card reveal" style="transition-delay:0.1s">
+        <div class="opencv-icon">🎨</div>
+        <div class="opencv-id">CV_02</div>
+        <div class="opencv-name">AI Virtual Painter</div>
+        <div class="opencv-tech">OpenCV · Hand Tracking · Python</div>
+
+        <a href="https://github.com/Nafisa-555/Day-2-AI-Virtual-Painter" target="_blank" class="opencv-btn">⌥ GitHub</a>
+
+
+      </div>
+      <div class="opencv-card reveal" style="transition-delay:0.15s">
+        <div class="opencv-icon">🔊</div>
+        <div class="opencv-id">CV_03</div>
+        <div class="opencv-name">Hand Gesture Volume Control</div>
+        <div class="opencv-tech">OpenCV · MediaPipe · PyAutoGUI</div>
+
+        <a href="https://github.com/Nafisa-555/Day-3-Hand-Gesture-Volume-Control" target="_blank" class="opencv-btn">⌥ GitHub</a>
+
+
+      </div>
+      <div class="opencv-card reveal" style="transition-delay:0.2s">
+        <div class="opencv-icon">🖱️</div>
+        <div class="opencv-id">CV_04</div>
+        <div class="opencv-name">Hand Gesture Mouse Control</div>
+        <div class="opencv-tech">OpenCV · MediaPipe · Python</div>
+ 
+        <a href="https://github.com/Nafisa-555/Day-4-Hand-Gesture-Mouse-Control-" target="_blank" class="opencv-btn">⌥ GitHub</a>
+
+      </div>
+      <div class="opencv-card reveal" style="transition-delay:0.25s">
+        <div class="opencv-icon">🏓</div>
+        <div class="opencv-id">CV_05</div>
+        <div class="opencv-name">AI Hand Bounce Game</div>
+        <div class="opencv-tech">OpenCV · Real-Time Interaction</div>
+
+                <a href="https://github.com/Nafisa-555/Day-5-AI-Hand-Bounce-Game" target="_blank" class="opencv-btn">⌥ GitHub</a>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="max-wrap">
+    <div class="section-header reveal">
+      <div class="section-number">// 05 - let's connect</div>
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-links-col reveal-left">
+        <a href="mailto:ansarinafisa555@gmail.com" class="contact-item">
+          <span class="contact-icon">✉️</span>
+          <span class="contact-info">
+            <span class="contact-label">Email</span>
+            <span class="contact-val">ansarinafisa555@gmail.com</span>
+          </span>
+          <span class="contact-arrow">→</span>
+        </a>
+        <a href="https://github.com/Nafisa-555" target="_blank" class="contact-item">
+          <span class="contact-icon">⌥</span>
+          <span class="contact-info">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-val">github.com/Nafisa-555</span>
+          </span>
+          <span class="contact-arrow">→</span>
+        </a>
+        <a href="https://www.linkedin.com/in/nafisa-ansari-624344301/" target="_blank" class="contact-item">
+          <span class="contact-icon">⌗</span>
+          <span class="contact-info">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-val">in/nafisa-ansari-624344301</span>
+          </span>
+          <span class="contact-arrow">→</span>
+        </a>
+      </div>
+      <div class="contact-cta-col reveal-right">
+        <div class="contact-cta-highlight">Ready to <span>build</span> something <span>great</span> together?</div>
+        <div class="contact-cta-text">
+          I am actively seeking opportunities in data analytics, backend development, and AI/ML engineering.
+          Whether you have a role, a project, or just want to chat about tech - my inbox is always open.
+        </div>
+        <a href="mailto:ansarinafisa555@gmail.com" class="btn-glow"><span>🚀 Send a Message</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span>© 2026 <span class="footer-accent">Nafisa Ansari</span></span>
+  <span>Built with 💚 &amp; lots of ☕</span>
+  <span class="footer-accent">// open_to_work: true</span>
+</footer>
+
+
+
+<script src="Script.js"> </script>
+
+
+</body>
+</html>
