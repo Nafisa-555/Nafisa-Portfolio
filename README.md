@@ -25,8 +25,9 @@ This portfolio showcases my skills, projects, education, and contact information
 
 Feel free to connect with me:
 
-LinkedIn: https://www.linkedin.com/in/nafisa-ansari-624344301/
-GitHub: https://github.com/Nafisa-555
+### LinkedIn: https://www.linkedin.com/in/nafisa-ansari-624344301/
+
+### GitHub: https://github.com/Nafisa-555
 
 ## ⭐ About Me
 
